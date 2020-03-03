@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>STUDENT PORTAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+          footer{
+            background-color:black;
+
+
+
+            
+          }
+          body{
+            background-color:lavender;
+          }
+          li.hover{
+            background-color:red;
+          }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" style="background-color: black">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">STUDENT PORTAL</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="login.php">STUDENT</a></li>
+      <li><a href="lecturer_login.php">LECTURER</a></li>
+      
+       
+  
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <center><h3><b>Welcome t the student portal for computer science student</b></h3>
+  <article>
+                 <i>Click on the <b>SIGN UP</b> if you have not registered as a student.
+                  </i>
+      </article></center>
+<center>
+      <div class="w3-content w3-section" style="max-width:100%">
+  
+  
+  <img class="mySlides" src="img/student.jpg" height="550px" width="980px">
+    <img class="mySlides" src="img/kof.jpg" height="500px" width="950px">
+     <img class="mySlides" src="img/kof2.jpg" height="500px" width="950px">
+      <img class="mySlides" src="img/kof3.jpg" height="500px" width="950px">
+
+
+  <!--<img class="mySlides" src="img/rule.jpg" style="width:60%">-->
+  
+  
+</div>
+</center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+<br />
+<br />
+<footer><p>Selorm Project &copy 2020 </p></footer>
+</body>
+</html>
